@@ -30,7 +30,7 @@ while x < 500000000
 reversesort(x)
 
 print " value of x is: " + x.to_s
-x += 1
+x += 10000000
 end
 
 
