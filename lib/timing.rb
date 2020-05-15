@@ -16,6 +16,20 @@ def reversesort(c)
     total = etime - stime
     puts "time taken for reverse sort " + total.to_s + " seconds"
 end
+
+def ownreversesort(c)
+     stime = Time.now
+    a = (1..c).to_a
+    a.each do |n|
+    b = a.pop()
+    end
+    etime = Time.now
+
+    total = etime - stime
+    puts "time taken for reverse sort " + total.to_s + " seconds"
+end
+
+
 def lastsort(c)
      stime = Time.now
     a = (1..c).to_a.last
@@ -27,7 +41,7 @@ end
 
 x = 0
 while x < 500000000
-reversesort(x)
+ownreversesort(x)
 
 print " value of x is: " + x.to_s
 x += 10000000
